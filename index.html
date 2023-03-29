@@ -75,13 +75,13 @@
         }
       }
 
-      let resultString = "Copia " + copiaCount;
+      let resultString = "Copy " + copiaCount;
       if (voltaMaoCount > 0) {
-        resultString += " e volta para a mão " + voltaMaoCount;
+        resultString += " and return to hand " + voltaMaoCount;
       }
-      resultString += " vez";
+      resultString += " time";
       if (copiaCount != 1 || voltaMaoCount != 1) {
-        resultString += "es";
+        resultString += "s";
       }
 
       const resultElement = document.getElementById("result");
