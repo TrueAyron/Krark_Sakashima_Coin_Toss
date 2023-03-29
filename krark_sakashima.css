@@ -88,10 +88,10 @@ body* > {
 */
 .frame-header,
 .frame-type-line {
-    border-bottom: 4px solid #a9a9a9;
-    border-left: 2px solid #a9a9a9;
-    border-top: 1px solid #fff;
-    border-right: 1px solid #fff;
+    border-bottom: 4px solid rgba(212, 156, 156, 0.3);
+    border-left: 2px solid rgba(212, 156, 156, 0.3);
+    border-top: 1px solid rgba(212, 156, 156, 0.37);
+    border-right: 1px solid rgba(212, 156, 156, 0.37);
 }
 
 .frame-header,
@@ -149,7 +149,7 @@ body* > {
 .frame-header,
 .frame-type-line {
     background: 
-        linear-gradient( 0deg, rgba(201, 216, 201, .3), rgba(201, 216, 209, .3) ), 
+        linear-gradient( 0deg, rgba(212, 156, 156, 0.3), rgba(206, 162, 162, 0.3) ), 
         url(https://image.ibb.co/jKByZn/tile_bg_1.jpg);     
     display: flex;
     margin-top: 10px;
@@ -172,11 +172,6 @@ body* > {
 }
 
 #mana-icon {
-    font-size: 1.4em;
-    background: #ADD3AC;
-    border-radius: 50%;
-    box-sizing: border-box;
-    box-shadow: -0.05em 0.12em 0px 0 black;
     margin-right: 5px;
     height: 20px;
     align-self: center;
@@ -187,9 +182,7 @@ body* > {
 }
 
 #set-icon {
-    height: 100%;
-    width:5%;
-    overflow: hidden;
+    width:6%;
     margin-right: 10px;
     align-self: center;
 } 
