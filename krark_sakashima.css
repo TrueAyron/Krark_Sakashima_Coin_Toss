@@ -214,10 +214,6 @@ p {
     margin: 5px 1px;
 }
 
-
-
-
-
 .frame-bottom-info {
     color: white;
     display: flex;
@@ -278,3 +274,137 @@ fbi-left {
 #result {
     margin-top: 10px;
   }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --input-border: #833b3b;
+    --input-focus-h: 10;
+    --input-focus-s: 100%;
+    --input-focus-l: 42%;
+}
+
+.input {
+    width: 50%;
+    margin: auto;
+    font-size: 8px;
+    font-size: Max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #fff;
+    border: 2px solid var(--input-border);
+    border-radius: 4px;
+    transition: 180ms box-shadow ease-in-out;
+}
+
+.input:focus {
+    border-color: hsl(var(--input-focus-h),
+            var(--input-focus-s),
+            var(--input-focus-l));
+    box-shadow: 0 0 0 3px hsla(var(--input-focus-h),
+            var(--input-focus-s),
+            calc(var(--input-focus-l) + 40%),
+            0.8);
+    outline: 3px solid transparent;
+}
+
+.input:not(textarea) {
+    line-height: 1;
+    height: 2.25rem;
+}
+
+input[type="file"] {
+    font-size: 0.9em;
+    padding-top: 0.35rem;
+}
+
+textarea.input {
+    resize: vertical;
+}
+
+.input[readonly] {
+    border-style: dotted;
+    cursor: not-allowed;
+    color: #833b3b;
+}
+
+.input[disabled] {
+    --input-border: #833b3b;
+
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+label {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.input+label {
+    margin-top: 2rem;
+}
+
+.button-60 {
+    
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: .375em;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #363636;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    height: 2.5em;
+    justify-content: center;
+    line-height: 1.5;
+    padding: calc(.5em - 1px) 1em;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.button-60:active {
+    border-color: #4a4a4a;
+    outline: 0;
+}
+
+.button-60:focus {
+    border-color: #c74848;
+    outline: 0;
+}
+
+.button-60:hover {
+    border-color: #b5b5b5;
+}
+
+.button-60:focus:not(:active) {
+    box-shadow: rgba(199, 72, 72, 0.25) 0 0 0 .125em;
+}
+
+.text-center{
+    margin: auto;
+}
+
+#Thumb {
+    margin-bottom: 15px;
+}
+
+#SegundaBox {
+    margin-bottom: 15px;
+}
+
